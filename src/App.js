@@ -1,9 +1,11 @@
 import "./App.css";
+import SignosVitalesPage from "./Pages/SignosVitalesPage";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>It works</h1>
+      <SignosVitalesPage />
     </div>
   );
 }

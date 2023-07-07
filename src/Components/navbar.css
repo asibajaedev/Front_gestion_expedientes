@@ -1,0 +1,25 @@
+.main-nav {
+  margin-top: 1rem;
+  padding-left: 0rem;
+  padding-right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 1600px;
+}
+.main-nav a {
+  font-size: 4.12rem;
+  color: #d9d9d9;
+  margin-right: 1rem;
+}
+.logo {
+  width: 20rem;
+  height: 6rem;
+  margin-left: 1rem;
+}
+.rigth-sec {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
