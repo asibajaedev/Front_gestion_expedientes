@@ -1,0 +1,9 @@
+.main-footer{
+    background-color: #fff;
+    border-radius: 15px;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    max-width: 1600px;
+}
