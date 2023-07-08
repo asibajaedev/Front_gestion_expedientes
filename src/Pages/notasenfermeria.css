@@ -1,0 +1,64 @@
+.gestion-de-notas{
+  width: 100%;
+}
+
+.main-body{
+  width: 95%;
+  max-width: 1600px;
+}
+
+.main-body,
+.menu-izquierdo,
+.lista-registros {
+  height: 29rem;
+  margin-top: -0.5rem;
+  margin-bottom: -1.5rem;
+}
+
+.lista-registros {
+  background-color: #fff;
+  margin-left: -1.5rem;
+  margin-right: 0;
+  width: 69.5rem;
+  max-height: 29rem;
+  overflow: auto;
+}
+
+.menu-izquierdo {
+  background-color: #fff;
+  width: 20rem;
+  margin-left: -0.6rem;
+}
+
+.btn:not(.btn-buscar) {
+  background-color: #e6e6e6;
+  border: none;
+  color: #000;
+  margin-top: 1rem;
+  width: 8rem;
+  height: 3rem;
+}
+
+.busqueda {
+  position: relative;
+  top: 1rem;
+  left: 51rem;
+  display: flex;
+  flex-direction: row;
+  width: 17rem;
+  margin: 0;
+}
+
+.cedula-busqueda {
+  width: 15rem;
+}
+
+.btn-buscar {
+  background-color: #e6e6e6;
+  border: none;
+  color: #000;
+}
+
+.results {
+  margin-top: 1.5rem;
+}
