@@ -6,11 +6,27 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import './index.css';
 import App from './App';
 import { createHashRouter,RouterProvider } from 'react-router-dom';
+import ConsultaNotaEnfermeria from './Pages/ConsultaNotaEnfermeria';
+import NotasEnfermeriaPage from "./Pages/NotasEnfermeriaPage";
+import RegistrarNota from './Pages/RegistrarNota';
+
 
 const router = createHashRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/nota',
+    element: <NotasEnfermeriaPage />
+  },
+  {
+    path: '/nota/consultar',
+    element: <ConsultaNotaEnfermeria />
+  },
+  {
+    path: 'nota/registrar',
+    element: <RegistrarNota />
   }
 ]
 );

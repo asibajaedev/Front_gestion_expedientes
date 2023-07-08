@@ -1,0 +1,13 @@
+tbody tr {
+  cursor: pointer;
+}
+
+tr:active {
+  z-index: 1;
+  background-color: #0B5ED7;
+  color: #fff;
+} 
+
+.tabla {
+  overflow: auto;
+}
