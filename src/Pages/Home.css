@@ -1,0 +1,36 @@
+.main-body-home {
+  width: 95%;
+  max-width: 1600px;
+  background-color: #fff;
+  height: 500px;
+}
+
+.cont-img{
+  border: 3px solid #000;
+  width: 11rem;
+}
+
+.test{
+  background-color: red;
+}
+.mycol{
+
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000;
+
+}
+
+.cont-img img{
+  width: 10rem;
+  height: 10rem;
+  padding-left: 0;
+}
+
+.myrow{
+  margin:auto;
+  padding-top: 8rem;
+}

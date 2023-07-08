@@ -6,6 +6,7 @@
   padding-bottom: 0.5rem;
   background-color: #fff;
   border-radius: 15px;
+  width: 95%;
   max-width: 1600px;
 }
 .main-nav a {
