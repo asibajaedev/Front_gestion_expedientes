@@ -106,7 +106,6 @@ export default function Signosvitales() {
         </div>
       </div>
       <Separador />
-      <Footer />
       <ModalError texto={modalTextError} />
       <ModalAdvertencia texto={modalTextError} />
     </div>
@@ -159,6 +158,7 @@ export default function Signosvitales() {
   }
   function handleCellClick(e) {
     let currentRow = e.target.parentNode.firstChild.innerHTML;
+    setCedula(e.target.innerHTML)
     setSelectedCell(currentRow);
     localStorage.setItem("idSignos", currentRow);
     try {

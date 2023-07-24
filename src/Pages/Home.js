@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <div className="col-4 mycol">
             <div className="container cont-img">
-              <Link to="/notas">
+              <Link to="/nota">
                 <img src={NotaImg} className=""></img>
               </Link>
             </div>

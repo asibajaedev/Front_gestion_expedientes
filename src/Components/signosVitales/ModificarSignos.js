@@ -1,5 +1,4 @@
 import React from "react";
-//import './signosvitales.css';
 import Navbar from "../navbar";
 import Separador from "../separador";
 import Footer from "../footer";
@@ -20,7 +19,6 @@ export default function ModificarSignos() {
       .then((data) => {
         setSignos(data[0][0]);
         fillForm(data[0][0]);
-        console.log(data[0][0]);
       });
   }, []);
 
@@ -150,7 +148,7 @@ export default function ModificarSignos() {
       "sfrecuencia_cardiaca"
     ).value;
     let glucemia = document.getElementById("sglucemia").value;
-    let cedula_encargado = document.getElementById("scedula_encargado").value;
+    let cedula_encargado = "not implemented"
     let temperatura = document.getElementById("stemperatura").value;
     let presion_arterial = document.getElementById("spresion_arterial").value;
     let respondable = document.getElementById("srespondable").value;
@@ -171,7 +169,7 @@ export default function ModificarSignos() {
       respondable: respondable,
       turno: turno,
       fecha_creado: fecha,
-      cedula_encargado: cedula_encargado,
+      cedula_encargado: "not implemented"
     };
     return data;
   }
@@ -191,11 +189,11 @@ export default function ModificarSignos() {
     }
 
     if (validateCedula(data.persona_cedula)) {
-      if (validateCedula(data.cedula_encargado)) {
+      if (true) {
         return true;
       }
     } else {
-      setModalTextError("Cédula incorrecta");
+      
       return false;
     }
   }
@@ -229,8 +227,8 @@ export default function ModificarSignos() {
     const data = takeFormData();
     try {
       if (validateData(data)) {
-        const response = await fetch("http://localhost:3001/signos/insertar", {
-          method: "POST",
+        const response = await fetch("http://localhost:3001/signos/update", {
+          method: "PUT",
           headers: {
             "Content-Type": "application/json",
             mode: "no-cors",
